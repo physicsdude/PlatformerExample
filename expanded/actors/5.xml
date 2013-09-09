@@ -1,40 +1,62 @@
 <opt PGFVersion="0.19" id="id590977" GSCVersion="0.10.3">
-  <behaviors name="behavior" id="id636911" class="RuleBehavior" enabled="true">
-    <elseBehaviors></elseBehaviors>
-    <behaviors name="behavior">
-      <id641958 class="PlaySoundAction" enabled="true">
-        <attributes name="boolean">
-          <runToCompletion>true</runToCompletion>
-          <dopplerShift>false</dopplerShift>
-          <loop>false</loop>
-          <positional>false</positional>
-        </attributes>
-        <attributes name="name">Play Sound</attributes>
-        <attributes name="bundleName">PlaySound.behavior</attributes>
-        <attributes name="real">
-          <volume>1</volume>
-          <pitch>1</pitch>
-        </attributes>
-        <attributes name="sound" id="soundName">pickup</attributes>
-      </id641958>
-      <id576333 class="DestroyAction" enabled="true">
-        <attributes name="name">Destroy</attributes>
-        <attributes name="bundleName">Destroy.behavior</attributes>
-      </id576333>
-    </behaviors>
-    <attributes name="name">Rule</attributes>
-    <attributes name="bundleName">Rule.behavior</attributes>
-    <attributes name="real" id="compoundConditionKind">0</attributes>
-    <conditions eventType="overlaps or collides" name="condition" id="id212859">
-      <predicate type="collision">
-        <attributes name="name">default name</attributes>
-        <attributes name="actorTag" />
-        <attributes name="prototypeKey">id295030</attributes>
-        <attributes name="real" id="mode">0</attributes>
-      </predicate>
-      <attributes name="index" id="conditionType">0</attributes>
-      <attributes name="text" id="name">default name</attributes>
-    </conditions>
+  <behaviors name="behavior">
+    <id158067 class="RuleBehavior" enabled="true">
+      <elseBehaviors></elseBehaviors>
+      <behaviors name="behavior" id="id463118" class="GrowShrinkBehavior" enabled="true">
+        <attributes name="name">Change Size</attributes>
+        <attributes name="bundleName">ChangeSize.behavior</attributes>
+        <attributes name="real" id="growthRate">5</attributes>
+      </behaviors>
+      <attributes name="name">Rule</attributes>
+      <attributes name="bundleName">Rule.behavior</attributes>
+      <attributes name="real" id="compoundConditionKind">0</attributes>
+      <conditions pluginPredicateTypeIndex="0" eventType="key" name="condition" id="id351778">
+        <predicate type="key">
+          <attributes name="text">
+            <mode>down</mode>
+            <keyString>g</keyString>
+          </attributes>
+        </predicate>
+        <attributes name="index" id="conditionType">0</attributes>
+      </conditions>
+    </id158067>
+    <id636911 class="RuleBehavior" enabled="true">
+      <elseBehaviors></elseBehaviors>
+      <behaviors name="behavior">
+        <id641958 class="PlaySoundAction" enabled="true">
+          <attributes name="boolean">
+            <runToCompletion>true</runToCompletion>
+            <dopplerShift>false</dopplerShift>
+            <loop>false</loop>
+            <positional>false</positional>
+          </attributes>
+          <attributes name="name">Play Sound</attributes>
+          <attributes name="bundleName">PlaySound.behavior</attributes>
+          <attributes name="real">
+            <volume>1</volume>
+            <pitch>1</pitch>
+          </attributes>
+          <attributes name="sound" id="soundName">pickup</attributes>
+        </id641958>
+        <id576333 class="DestroyAction" enabled="true">
+          <attributes name="name">Destroy</attributes>
+          <attributes name="bundleName">Destroy.behavior</attributes>
+        </id576333>
+      </behaviors>
+      <attributes name="name">Rule</attributes>
+      <attributes name="bundleName">Rule.behavior</attributes>
+      <attributes name="real" id="compoundConditionKind">0</attributes>
+      <conditions eventType="overlaps or collides" name="condition" id="id212859">
+        <predicate type="collision">
+          <attributes name="name">default name</attributes>
+          <attributes name="actorTag" />
+          <attributes name="prototypeKey">id295030</attributes>
+          <attributes name="real" id="mode">0</attributes>
+        </predicate>
+        <attributes name="index" id="conditionType">0</attributes>
+        <attributes name="text" id="name">default name</attributes>
+      </conditions>
+    </id636911>
   </behaviors>
   <aspects name="graphics">
     <attributes name="boolean">
