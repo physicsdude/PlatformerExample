@@ -1,0 +1,58 @@
+<opt PGFVersion="0.19" id="id526375" GSCVersion="0.10.3">
+  <attributes name="boolean">
+    <wrapX>false</wrapX>
+    <wrapY>false</wrapY>
+  </attributes>
+  <attributes name="color" id="color">
+    <real name="green">0</real>
+    <real name="alpha">1</real>
+    <real name="blue">0</real>
+    <real name="red">0</real>
+  </attributes>
+  <attributes name="rect" id="camera">
+    <point id="origin">
+      <real name="y">0</real>
+      <real name="x">0</real>
+    </point>
+    <size name="trackingArea">
+      <real name="width">488</real>
+      <real name="height">240</real>
+    </size>
+    <size name="size">
+      <real name="width">568</real>
+      <real name="height">320</real>
+    </size>
+    <real id="rotation">0</real>
+  </attributes>
+  <attributes name="point" id="gravity">
+    <real name="y">0</real>
+    <real name="x">0</real>
+  </attributes>
+  <attributes name="text" id="name">Scene 1</attributes>
+  <attributes name="attributes" id="autorotate">
+    <boolean name="landscapeRight">false</boolean>
+    <boolean name="landscapeLeft">true</boolean>
+    <boolean name="portraitUpsideDown">false</boolean>
+    <boolean name="portrait">false</boolean>
+  </attributes>
+  <attributes name="size" id="size">
+    <real name="width">568</real>
+    <real name="height">320</real>
+  </attributes>
+  <attributes name="real" id="time">0</attributes>
+  <layers name="layer" id="id761517">
+    <attributes name="boolean" id="scrollable">true</attributes>
+    <attributes name="text" id="name">Background</attributes>
+    <actors name="actor" id="id493729" prototype="id387676">
+      <attributes name="point" id="position">
+        <real name="y">160</real>
+        <real name="x">284</real>
+      </attributes>
+      <attributes name="size" id="size">
+        <real name="width">481</real>
+        <real name="height">320</real>
+      </attributes>
+      <aspects></aspects>
+    </actors>
+  </layers>
+</opt>

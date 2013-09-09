@@ -1,0 +1,96 @@
+<opt PGFVersion="0.19" id="id344393" GSCVersion="0.10.3">
+  <behaviors name="behavior" id="id966911" class="RuleBehavior" enabled="true">
+    <elseBehaviors></elseBehaviors>
+    <behaviors name="behavior" id="id185928" class="SpawnAction" enabled="true">
+      <attributes name="index">
+        <layerOrder>0</layerOrder>
+        <positionSpace>0</positionSpace>
+        <directionSpace>0</directionSpace>
+      </attributes>
+      <attributes name="name">Spawn Actor</attributes>
+      <attributes name="prototypeKey">id196921</attributes>
+      <attributes name="bundleName">Spawn.behavior</attributes>
+      <attributes name="angle" id="direction">0</attributes>
+      <attributes name="real">
+        <y>-15</y>
+        <x>0</x>
+      </attributes>
+    </behaviors>
+    <attributes name="name">Rule</attributes>
+    <attributes name="bundleName">Rule.behavior</attributes>
+    <attributes name="real" id="compoundConditionKind">0</attributes>
+    <conditions eventType="overlaps or collides" name="condition" id="id751369">
+      <predicate type="collision">
+        <attributes name="name">default name</attributes>
+        <attributes name="actorTag" />
+        <attributes name="prototypeKey">id295030</attributes>
+        <attributes name="real" id="mode">0</attributes>
+      </predicate>
+      <attributes name="index" id="conditionType">0</attributes>
+      <attributes name="text" id="name">default name</attributes>
+    </conditions>
+  </behaviors>
+  <aspects name="graphics">
+    <attributes name="boolean">
+      <visible>true</visible>
+      <flipHorizontally>false</flipHorizontally>
+      <flipVertically>false</flipVertically>
+    </attributes>
+    <attributes name="integer">
+      <tileWidth>64</tileWidth>
+      <tileHeight>28</tileHeight>
+    </attributes>
+    <attributes name="enumeration">
+      <blendingMode>0</blendingMode>
+      <horizontalAnchor>0</horizontalAnchor>
+      <horizontalWrap>0</horizontalWrap>
+      <verticalAnchor>0</verticalAnchor>
+      <verticalWrap>0</verticalWrap>
+    </attributes>
+  </aspects>
+  <aspects name="motion">
+    <attributes name="boolean" id="applyMaxSpeed">false</attributes>
+    <attributes name="point" id="linearVelocity">
+      <real name="y">0</real>
+      <real name="x">0</real>
+    </attributes>
+    <attributes name="real">
+      <angularVelocity>0</angularVelocity>
+      <maxSpeed>0</maxSpeed>
+    </attributes>
+  </aspects>
+  <aspects name="physics">
+    <attributes name="boolean">
+      <movable>false</movable>
+      <fixedRotation>false</fixedRotation>
+    </attributes>
+    <attributes name="enumeration" id="collisionShape">0</attributes>
+    <attributes name="real">
+      <restitution>0</restitution>
+      <friction>3</friction>
+      <angularDrag>0</angularDrag>
+      <drag>0</drag>
+      <density>1</density>
+    </attributes>
+  </aspects>
+  <attributes name="boolean" id="preloadArt">true</attributes>
+  <attributes name="color" id="color">
+    <real name="green">0.955556</real>
+    <real name="alpha">1</real>
+    <real name="blue">1</real>
+    <real name="red">0.977778</real>
+  </attributes>
+  <attributes name="point" id="position">
+    <real name="y">0</real>
+    <real name="x">0</real>
+  </attributes>
+  <attributes name="name">spring</attributes>
+  <attributes name="tags" />
+  <attributes name="angle" id="rotation">0</attributes>
+  <attributes name="image" id="image">spring</attributes>
+  <attributes name="size" id="size">
+    <real name="width">64</real>
+    <real name="height">28</real>
+  </attributes>
+  <attributes name="real" id="time">0</attributes>
+</opt>

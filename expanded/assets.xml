@@ -1,0 +1,40 @@
+<opt PGFVersion="0.19" GSCVersion="0.10.3">
+  <images name="image">
+    <run_L6 name="run_L6.png" size="6080" />
+    <run_R1 name="run_R1.png" size="5913" />
+    <doorway name="doorway.png" size="12482" />
+    <run_R5 name="run_R5.png" size="5592" />
+    <run_L5 name="run_L5.png" size="5678" />
+    <Platformer name="Platformer.png" size="805015" />
+    <fall_R name="fall_R.png" size="5783" />
+    <run_L7 name="run_L7.png" size="5485" />
+    <run_R4 name="run_R4.png" size="5747" />
+    <run_R8 name="run_R8.png" size="5473" />
+    <spring name="spring.png" size="6125" />
+    <boom02 name="boom02.png" size="10713" />
+    <stand_R name="stand_R.png" size="5816" />
+    <stand_L name="stand_L.png" size="5797" />
+    <gem name="gem.png" size="3261" />
+    <run_R7 name="run_R7.png" size="5422" />
+    <jump_L name="jump_L.png" size="6536" />
+    <run_L3 name="run_L3.png" size="5399" />
+    <run_L2 name="run_L2.png" size="5411" />
+    <jump_R name="jump_R.png" size="6515" />
+    <fall_L name="fall_L.png" size="5753" />
+    <run_R6 name="run_R6.png" size="6004" />
+    <run_R3 name="run_R3.png" size="5304" />
+    <run_R2 name="run_R2.png" size="5330" />
+    <torch name="torch.png" size="1335" />
+    <lavaBubble name="lavaBubble.png" size="2977" />
+    <run_L8 name="run_L8.png" size="5579" />
+    <run_L1 name="run_L1.png" size="5985" />
+    <run_L4 name="run_L4.png" size="5845" />
+  </images>
+  <sounds name="sound">
+    <end level name="end level.ogg" size="14039" />
+    <pickup name="pickup.ogg" size="6854" />
+    <hurt name="hurt.ogg" size="5044" />
+    <jump name="jump.ogg" size="5648" />
+  </sounds>
+  <behaviors></behaviors>
+</opt>

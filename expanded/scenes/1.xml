@@ -1,0 +1,638 @@
+<opt PGFVersion="0.19" id="id269551" GSCVersion="0.10.3">
+  <attributes name="boolean">
+    <wrapX>false</wrapX>
+    <wrapY>false</wrapY>
+  </attributes>
+  <attributes name="color" id="color">
+    <real name="green">0</real>
+    <real name="alpha">1</real>
+    <real name="blue">0</real>
+    <real name="red">0</real>
+  </attributes>
+  <attributes name="rect" id="camera">
+    <point id="origin">
+      <real name="y">0</real>
+      <real name="x">0</real>
+    </point>
+    <size name="trackingArea">
+      <real name="width">214.57</real>
+      <real name="height">48.2188</real>
+    </size>
+    <size name="size">
+      <real name="width">568</real>
+      <real name="height">320</real>
+    </size>
+    <real id="rotation">0</real>
+  </attributes>
+  <attributes name="point" id="gravity">
+    <real name="y">1500</real>
+    <real name="x">0</real>
+  </attributes>
+  <attributes name="text" id="name">Level 1</attributes>
+  <attributes name="attributes" id="autorotate">
+    <boolean name="landscapeRight">false</boolean>
+    <boolean name="landscapeLeft">true</boolean>
+    <boolean name="portraitUpsideDown">false</boolean>
+    <boolean name="portrait">false</boolean>
+  </attributes>
+  <attributes name="size" id="size">
+    <real name="width">1024</real>
+    <real name="height">680</real>
+  </attributes>
+  <attributes name="real" id="time">0</attributes>
+  <layers name="layer" id="id112326">
+    <attributes name="boolean" id="scrollable">true</attributes>
+    <attributes name="text" id="name">Background</attributes>
+    <actors name="actor">
+      <id596059 prototype="id397075">
+        <attributes name="point" id="position">
+          <real name="y">59</real>
+          <real name="x">863</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">242</real>
+          <real name="height">44</real>
+        </attributes>
+        <aspects></aspects>
+      </id596059>
+      <id356765 prototype="id892234">
+        <attributes name="point" id="position">
+          <real name="y">565</real>
+          <real name="x">316</real>
+        </attributes>
+        <aspects></aspects>
+      </id356765>
+      <id178105 prototype="id590977">
+        <attributes name="point" id="position">
+          <real name="y">59</real>
+          <real name="x">92</real>
+        </attributes>
+        <aspects></aspects>
+      </id178105>
+      <id972546 prototype="id214699">
+        <attributes name="point" id="position">
+          <real name="y">74.5</real>
+          <real name="x">548</real>
+        </attributes>
+        <attributes name="angle" id="rotation">0</attributes>
+        <attributes name="size" id="size">
+          <real name="width">28</real>
+          <real name="height">5</real>
+        </attributes>
+        <aspects></aspects>
+      </id972546>
+      <id306500 prototype="id669251">
+        <attributes name="point" id="position">
+          <real name="y">49.5</real>
+          <real name="x">699</real>
+        </attributes>
+        <attributes name="angle" id="rotation">0</attributes>
+        <attributes name="size" id="size">
+          <real name="width">35</real>
+          <real name="height">28</real>
+        </attributes>
+        <aspects></aspects>
+      </id306500>
+      <id338180 prototype="id214699">
+        <attributes name="point" id="position">
+          <real name="y">186</real>
+          <real name="x">633.5</real>
+        </attributes>
+        <attributes name="angle" id="rotation">0</attributes>
+        <attributes name="size" id="size">
+          <real name="width">39</real>
+          <real name="height">2</real>
+        </attributes>
+        <aspects></aspects>
+      </id338180>
+      <id420589 prototype="id590977">
+        <attributes name="point" id="position">
+          <real name="y">385</real>
+          <real name="x">65</real>
+        </attributes>
+        <aspects></aspects>
+      </id420589>
+      <id734083 prototype="id214699">
+        <attributes name="point" id="position">
+          <real name="y">285.5</real>
+          <real name="x">142</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">32</real>
+          <real name="height">5</real>
+        </attributes>
+        <aspects></aspects>
+      </id734083>
+      <id868349 prototype="id214699">
+        <attributes name="point" id="position">
+          <real name="y">38.5</real>
+          <real name="x">634.5</real>
+        </attributes>
+        <attributes name="angle" id="rotation">0</attributes>
+        <attributes name="size" id="size">
+          <real name="width">147</real>
+          <real name="height">24</real>
+        </attributes>
+        <aspects></aspects>
+      </id868349>
+      <id985525 prototype="id295030">
+        <attributes name="point" id="position">
+          <real name="y">544.5</real>
+          <real name="x">100</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">50</real>
+          <real name="height">54</real>
+        </attributes>
+        <aspects></aspects>
+      </id985525>
+      <id300335 prototype="id214699">
+        <attributes name="point" id="position">
+          <real name="y">320.5</real>
+          <real name="x">97</real>
+        </attributes>
+        <attributes name="angle" id="rotation">0</attributes>
+        <attributes name="size" id="size">
+          <real name="width">52</real>
+          <real name="height">5</real>
+        </attributes>
+        <aspects></aspects>
+      </id300335>
+      <id373332 prototype="id892234">
+        <attributes name="point" id="position">
+          <real name="y">574</real>
+          <real name="x">677</real>
+        </attributes>
+        <aspects></aspects>
+      </id373332>
+      <id246268 prototype="id892234">
+        <attributes name="point" id="position">
+          <real name="y">569</real>
+          <real name="x">797</real>
+        </attributes>
+        <aspects></aspects>
+      </id246268>
+      <id759262 prototype="id344393">
+        <attributes name="point" id="position">
+          <real name="y">207</real>
+          <real name="x">949</real>
+        </attributes>
+        <aspects></aspects>
+      </id759262>
+      <id424457 prototype="id892234">
+        <attributes name="point" id="position">
+          <real name="y">567</real>
+          <real name="x">123</real>
+        </attributes>
+        <aspects></aspects>
+      </id424457>
+      <id456079 prototype="id669251">
+        <attributes name="point" id="position">
+          <real name="y">290</real>
+          <real name="x">98</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">57</real>
+          <real name="height">59</real>
+        </attributes>
+        <aspects></aspects>
+      </id456079>
+      <id218670 prototype="id669251">
+        <attributes name="point" id="position">
+          <real name="y">513.5</real>
+          <real name="x">540</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">45</real>
+          <real name="height">236</real>
+        </attributes>
+        <aspects></aspects>
+      </id218670>
+      <id936207 prototype="id214699">
+        <attributes name="point" id="position">
+          <real name="y">108.5</real>
+          <real name="x">271</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">74</real>
+          <real name="height">5</real>
+        </attributes>
+        <aspects></aspects>
+      </id936207>
+      <id630609 prototype="id669251">
+        <attributes name="point" id="position">
+          <real name="y">505.5</real>
+          <real name="x">214.5</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">336</real>
+          <real name="height">24</real>
+        </attributes>
+        <aspects></aspects>
+      </id630609>
+      <id864435 prototype="id214699">
+        <attributes name="point" id="position">
+          <real name="y">73.5</real>
+          <real name="x">191.5</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">85</real>
+          <real name="height">5</real>
+        </attributes>
+        <aspects></aspects>
+      </id864435>
+      <id309048 prototype="id892234">
+        <attributes name="point" id="position">
+          <real name="y">255</real>
+          <real name="x">692</real>
+        </attributes>
+        <aspects></aspects>
+      </id309048>
+      <id783562 prototype="id214699">
+        <attributes name="point" id="position">
+          <real name="y">39.5</real>
+          <real name="x">96</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">100</real>
+          <real name="height">5</real>
+        </attributes>
+        <aspects></aspects>
+      </id783562>
+      <id644207 prototype="id214699">
+        <attributes name="point" id="position">
+          <real name="y">88</real>
+          <real name="x">725</real>
+        </attributes>
+        <attributes name="angle" id="rotation">0</attributes>
+        <attributes name="size" id="size">
+          <real name="width">32</real>
+          <real name="height">24</real>
+        </attributes>
+        <aspects></aspects>
+      </id644207>
+      <id985441 prototype="id669251">
+        <attributes name="point" id="position">
+          <real name="y">338</real>
+          <real name="x">24</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">46</real>
+          <real name="height">680</real>
+        </attributes>
+        <aspects></aspects>
+      </id985441>
+      <id263746 prototype="id214699">
+        <attributes name="point" id="position">
+          <real name="y">203.5</real>
+          <real name="x">696.5</real>
+        </attributes>
+        <attributes name="angle" id="rotation">0</attributes>
+        <attributes name="size" id="size">
+          <real name="width">95</real>
+          <real name="height">5</real>
+        </attributes>
+        <aspects></aspects>
+      </id263746>
+      <id255091 prototype="id183830">
+        <attributes name="point" id="position">
+          <real name="y">340</real>
+          <real name="x">512</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">1024</real>
+          <real name="height">680</real>
+        </attributes>
+        <aspects></aspects>
+      </id255091>
+      <id781464 prototype="id669251">
+        <attributes name="point" id="position">
+          <real name="y">514.5</real>
+          <real name="x">700.5</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">280</real>
+          <real name="height">24</real>
+        </attributes>
+        <aspects></aspects>
+      </id781464>
+      <id347624 prototype="id214699">
+        <attributes name="point" id="position">
+          <real name="y">195</real>
+          <real name="x">950</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">72</real>
+          <real name="height">5</real>
+        </attributes>
+        <aspects></aspects>
+      </id347624>
+      <id636577 prototype="id669251">
+        <attributes name="point" id="position">
+          <real name="y">194.5</real>
+          <real name="x">696.5</real>
+        </attributes>
+        <attributes name="angle" id="rotation">0</attributes>
+        <attributes name="size" id="size">
+          <real name="width">94</real>
+          <real name="height">16</real>
+        </attributes>
+        <aspects></aspects>
+      </id636577>
+      <id304041 prototype="id214699">
+        <attributes name="point" id="position">
+          <real name="y">144.5</real>
+          <real name="x">345</real>
+        </attributes>
+        <attributes name="angle" id="rotation">0</attributes>
+        <attributes name="size" id="size">
+          <real name="width">74</real>
+          <real name="height">5</real>
+        </attributes>
+        <aspects></aspects>
+      </id304041>
+      <id319076 prototype="id669251">
+        <attributes name="point" id="position">
+          <real name="y">341</real>
+          <real name="x">1005</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">38</real>
+          <real name="height">680</real>
+        </attributes>
+        <aspects></aspects>
+      </id319076>
+      <id396259 prototype="id669251">
+        <attributes name="point" id="position">
+          <real name="y">309.5</real>
+          <real name="x">60.5</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">28</real>
+          <real name="height">98</real>
+        </attributes>
+        <aspects></aspects>
+      </id396259>
+      <id819957 prototype="id669251">
+        <attributes name="point" id="position">
+          <real name="y">170.5</real>
+          <real name="x">633</real>
+        </attributes>
+        <attributes name="angle" id="rotation">0</attributes>
+        <attributes name="size" id="size">
+          <real name="width">35</real>
+          <real name="height">24</real>
+        </attributes>
+        <aspects></aspects>
+      </id819957>
+      <id396144 prototype="id669251">
+        <attributes name="point" id="position">
+          <real name="y">87.5</real>
+          <real name="x">382.5</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">304</real>
+          <real name="height">38</real>
+        </attributes>
+        <aspects></aspects>
+      </id396144>
+      <id498320 prototype="id892234">
+        <attributes name="point" id="position">
+          <real name="y">452</real>
+          <real name="x">318</real>
+        </attributes>
+        <aspects></aspects>
+      </id498320>
+      <id393858 prototype="id214699">
+        <attributes name="point" id="position">
+          <real name="y">108.5</real>
+          <real name="x">516</real>
+        </attributes>
+        <attributes name="angle" id="rotation">0</attributes>
+        <attributes name="size" id="size">
+          <real name="width">36</real>
+          <real name="height">5</real>
+        </attributes>
+        <aspects></aspects>
+      </id393858>
+      <id992888 prototype="id669251">
+        <attributes name="point" id="position">
+          <real name="y">164</real>
+          <real name="x">422.5</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">90</real>
+          <real name="height">47</real>
+        </attributes>
+        <aspects></aspects>
+      </id992888>
+      <id124717 prototype="id669251">
+        <attributes name="point" id="position">
+          <real name="y">53.5</real>
+          <real name="x">353.5</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">416</real>
+          <real name="height">38</real>
+        </attributes>
+        <aspects></aspects>
+      </id124717>
+      <id103652 prototype="id669251">
+        <attributes name="point" id="position">
+          <real name="y">180.5</real>
+          <real name="x">951.5</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">74</real>
+          <real name="height">24</real>
+        </attributes>
+        <aspects></aspects>
+      </id103652>
+      <id653712 prototype="id214699">
+        <attributes name="point" id="position">
+          <real name="y">359.5</real>
+          <real name="x">57.5</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">27</real>
+          <real name="height">5</real>
+        </attributes>
+        <aspects></aspects>
+      </id653712>
+      <id973819 prototype="id214699">
+        <attributes name="point" id="position">
+          <real name="y">66</real>
+          <real name="x">701</real>
+        </attributes>
+        <attributes name="angle" id="rotation">0</attributes>
+        <attributes name="size" id="size">
+          <real name="width">34</real>
+          <real name="height">2</real>
+        </attributes>
+        <aspects></aspects>
+      </id973819>
+      <id800973 prototype="id214699">
+        <attributes name="point" id="position">
+          <real name="y">144.5</real>
+          <real name="x">482</real>
+        </attributes>
+        <attributes name="angle" id="rotation">0</attributes>
+        <attributes name="size" id="size">
+          <real name="width">30</real>
+          <real name="height">5</real>
+        </attributes>
+        <aspects></aspects>
+      </id800973>
+      <id205269 prototype="id214699">
+        <attributes name="point" id="position">
+          <real name="y">399.5</real>
+          <real name="x">385</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">264</real>
+          <real name="height">5</real>
+        </attributes>
+        <aspects></aspects>
+      </id205269>
+      <id239090 prototype="id669251">
+        <attributes name="point" id="position">
+          <real name="y">63.5</real>
+          <real name="x">725.5</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">36</real>
+          <real name="height">62</real>
+        </attributes>
+        <aspects></aspects>
+      </id239090>
+      <id281623 prototype="id590977">
+        <attributes name="point" id="position">
+          <real name="y">117</real>
+          <real name="x">721</real>
+        </attributes>
+        <aspects></aspects>
+      </id281623>
+      <id744496 prototype="id495883">
+        <attributes name="point" id="position">
+          <real name="y">569.5</real>
+          <real name="x">603</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">52</real>
+          <real name="height">93</real>
+        </attributes>
+        <aspects></aspects>
+      </id744496>
+      <id319419 prototype="id214699">
+        <attributes name="point" id="position">
+          <real name="y">526.5</real>
+          <real name="x">701.5</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">279</real>
+          <real name="height">5</real>
+        </attributes>
+        <aspects></aspects>
+      </id319419>
+      <id408574 prototype="id892234">
+        <attributes name="point" id="position">
+          <real name="y">126</real>
+          <real name="x">181</real>
+        </attributes>
+        <aspects></aspects>
+      </id408574>
+      <id745023 prototype="id214699">
+        <attributes name="point" id="position">
+          <real name="y">517</real>
+          <real name="x">214.5</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">335</real>
+          <real name="height">5</real>
+        </attributes>
+        <aspects></aspects>
+      </id745023>
+      <id452108 prototype="id669251">
+        <attributes name="point" id="position">
+          <real name="y">656.5</real>
+          <real name="x">512</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">1027</real>
+          <real name="height">48</real>
+        </attributes>
+        <aspects></aspects>
+      </id452108>
+      <id196837 prototype="id669251">
+        <attributes name="point" id="position">
+          <real name="y">18</real>
+          <real name="x">510</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">1027</real>
+          <real name="height">39</real>
+        </attributes>
+        <aspects></aspects>
+      </id196837>
+      <id414601 prototype="id669251">
+        <attributes name="point" id="position">
+          <real name="y">381.5</real>
+          <real name="x">410</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">307</real>
+          <real name="height">34</real>
+        </attributes>
+        <aspects></aspects>
+      </id414601>
+      <id245434 prototype="id669251">
+        <attributes name="point" id="position">
+          <real name="y">122</real>
+          <real name="x">401</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">193</real>
+          <real name="height">43</real>
+        </attributes>
+        <aspects></aspects>
+      </id245434>
+      <id536613 prototype="id669251">
+        <attributes name="point" id="position">
+          <real name="y">272.5</real>
+          <real name="x">140</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">37</real>
+          <real name="height">24</real>
+        </attributes>
+        <aspects></aspects>
+      </id536613>
+      <id576318 prototype="id892234">
+        <attributes name="point" id="position">
+          <real name="y">371</real>
+          <real name="x">104</real>
+        </attributes>
+        <aspects></aspects>
+      </id576318>
+      <id541216 prototype="id892234">
+        <attributes name="point" id="position">
+          <real name="y">244</real>
+          <real name="x">418</real>
+        </attributes>
+        <aspects></aspects>
+      </id541216>
+      <id660028 prototype="id214699">
+        <attributes name="point" id="position">
+          <real name="y">189.5</real>
+          <real name="x">422</real>
+        </attributes>
+        <attributes name="angle" id="rotation">0</attributes>
+        <attributes name="size" id="size">
+          <real name="width">82</real>
+          <real name="height">5</real>
+        </attributes>
+        <aspects></aspects>
+      </id660028>
+    </actors>
+  </layers>
+</opt>

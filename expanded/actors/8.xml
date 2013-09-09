@@ -1,0 +1,92 @@
+<opt PGFVersion="0.19" id="id196921" GSCVersion="0.10.3">
+  <behaviors name="behavior">
+    <id556276 class="TimerBehavior" enabled="true">
+      <behaviors name="behavior" id="id740432" class="DestroyAction" enabled="true">
+        <attributes name="name">Destroy</attributes>
+        <attributes name="bundleName">Destroy.behavior</attributes>
+      </behaviors>
+      <attributes name="boolean" id="runToCompletion">true</attributes>
+      <attributes name="index" id="timerType">1</attributes>
+      <attributes name="name">Timer</attributes>
+      <attributes name="bundleName">Timer.behavior</attributes>
+      <attributes name="real" id="interval">0.3</attributes>
+    </id556276>
+    <id930423 class="TimerBehavior" enabled="true">
+      <behaviors name="behavior" id="id732924" class="AccelerateBehavior" enabled="true">
+        <attributes name="index" id="space">0</attributes>
+        <attributes name="name">Accelerate</attributes>
+        <attributes name="bundleName">Accelerate.behavior</attributes>
+        <attributes name="angle" id="direction">90</attributes>
+        <attributes name="real" id="acceleration">9000</attributes>
+      </behaviors>
+      <attributes name="boolean" id="runToCompletion">true</attributes>
+      <attributes name="index" id="timerType">2</attributes>
+      <attributes name="name">Timer</attributes>
+      <attributes name="bundleName">Timer.behavior</attributes>
+      <attributes name="real" id="interval">1</attributes>
+    </id930423>
+  </behaviors>
+  <aspects name="graphics">
+    <attributes name="boolean">
+      <visible>false</visible>
+      <flipHorizontally>false</flipHorizontally>
+      <flipVertically>false</flipVertically>
+    </attributes>
+    <attributes name="integer">
+      <tileWidth>64</tileWidth>
+      <tileHeight>10</tileHeight>
+    </attributes>
+    <attributes name="enumeration">
+      <blendingMode>0</blendingMode>
+      <horizontalAnchor>0</horizontalAnchor>
+      <horizontalWrap>0</horizontalWrap>
+      <verticalAnchor>0</verticalAnchor>
+      <verticalWrap>0</verticalWrap>
+    </attributes>
+  </aspects>
+  <aspects name="motion">
+    <attributes name="boolean" id="applyMaxSpeed">false</attributes>
+    <attributes name="point" id="linearVelocity">
+      <real name="y">0</real>
+      <real name="x">0</real>
+    </attributes>
+    <attributes name="real">
+      <angularVelocity>0</angularVelocity>
+      <maxSpeed>0</maxSpeed>
+    </attributes>
+  </aspects>
+  <aspects name="physics">
+    <attributes name="boolean">
+      <movable>true</movable>
+      <fixedRotation>true</fixedRotation>
+    </attributes>
+    <attributes name="enumeration" id="collisionShape">0</attributes>
+    <attributes name="real">
+      <restitution>0</restitution>
+      <friction>3</friction>
+      <angularDrag>0</angularDrag>
+      <drag>0</drag>
+      <density>100</density>
+    </attributes>
+  </aspects>
+  <attributes name="boolean" id="preloadArt">true</attributes>
+  <attributes name="color" id="color">
+    <real name="green">1</real>
+    <real name="alpha">1</real>
+    <real name="blue">1</real>
+    <real name="red">1</real>
+  </attributes>
+  <attributes name="point" id="position">
+    <real name="y">0</real>
+    <real name="x">0</real>
+  </attributes>
+  <attributes name="name">InvisiSpring</attributes>
+  <attributes name="tags" />
+  <attributes name="angle" id="rotation">0</attributes>
+  <attributes name="image" id="image" />
+  <attributes name="size" id="size">
+    <real name="width">64</real>
+    <real name="height">10</real>
+  </attributes>
+  <attributes name="real" id="time">0</attributes>
+</opt>

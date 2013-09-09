@@ -1,0 +1,157 @@
+<opt PGFVersion="0.19" id="id397075" GSCVersion="0.10.3">
+  <behaviors name="behavior">
+    <id144670 class="ParticlesBehavior" enabled="true">
+      <attributes name="enumeration" id="blendingMode">0</attributes>
+      <attributes name="angle">
+        <direction>90</direction>
+        <rotation>0</rotation>
+      </attributes>
+      <attributes name="image" id="image">lavaBubble</attributes>
+      <attributes name="boolean">
+        <sizeChange>false</sizeChange>
+        <affectedByGravity>false</affectedByGravity>
+        <colorChange>false</colorChange>
+      </attributes>
+      <attributes name="index">
+        <directionRelativity>0</directionRelativity>
+        <numParticles>25</numParticles>
+      </attributes>
+      <attributes name="color">
+        <color name="real">
+          <green>0</green>
+          <blue>0</blue>
+          <alpha>1</alpha>
+          <red>1</red>
+        </color>
+        <colorTarget name="real">
+          <green>1</green>
+          <blue>1</blue>
+          <alpha>1</alpha>
+          <red>1</red>
+        </colorTarget>
+      </attributes>
+      <attributes name="name">Particles</attributes>
+      <attributes name="bundleName">Particles.behavior</attributes>
+      <attributes name="real">
+        <angularVelocity name="expression" string="random(0,45)" />
+        <emitterOffsetX name="expression" string="random(-100,100)" />
+        <lifetime name="expression" string="random(4,6)" />
+        <size>4</size>
+        <sizeTransitionTime>0</sizeTransitionTime>
+        <colorTransitionTime>1</colorTransitionTime>
+        <startupTime>0</startupTime>
+        <speed>10</speed>
+        <sizeTarget>5</sizeTarget>
+        <emitterOffsetY name="expression" string="random(-20,-10)" />
+      </attributes>
+    </id144670>
+    <id406297 class="RuleBehavior" enabled="true">
+      <elseBehaviors></elseBehaviors>
+      <behaviors name="behavior" id="id937485" class="TimerBehavior" enabled="true">
+        <behaviors name="behavior">
+          <id900390 class="PlaySoundAction" enabled="true">
+            <attributes name="boolean">
+              <runToCompletion>true</runToCompletion>
+              <dopplerShift>false</dopplerShift>
+              <loop>false</loop>
+              <positional>false</positional>
+            </attributes>
+            <attributes name="name">Play Sound</attributes>
+            <attributes name="bundleName">PlaySound.behavior</attributes>
+            <attributes name="real">
+              <volume>1</volume>
+              <pitch>1</pitch>
+            </attributes>
+            <attributes name="sound" id="soundName">hurt</attributes>
+          </id900390>
+          <id619623 class="ResetSceneAction" enabled="true">
+            <attributes name="boolean" id="enableAdvertisement">false</attributes>
+            <attributes name="name">Reset Scene</attributes>
+            <attributes name="bundleName">ResetScene.behavior</attributes>
+          </id619623>
+        </behaviors>
+        <attributes name="boolean" id="runToCompletion">true</attributes>
+        <attributes name="index" id="timerType">1</attributes>
+        <attributes name="name">Timer</attributes>
+        <attributes name="bundleName">Timer.behavior</attributes>
+        <attributes name="real" id="interval">0.3</attributes>
+      </behaviors>
+      <attributes name="name">Death</attributes>
+      <attributes name="bundleName">Rule.behavior</attributes>
+      <attributes name="real" id="compoundConditionKind">0</attributes>
+      <conditions eventType="overlaps or collides" name="condition" id="id401879">
+        <predicate type="collision">
+          <attributes name="name">default name</attributes>
+          <attributes name="actorTag" />
+          <attributes name="prototypeKey">id295030</attributes>
+          <attributes name="real" id="mode">0</attributes>
+        </predicate>
+        <attributes name="index" id="conditionType">0</attributes>
+        <attributes name="text" id="name">default name</attributes>
+      </conditions>
+    </id406297>
+  </behaviors>
+  <aspects name="graphics">
+    <attributes name="boolean">
+      <visible>true</visible>
+      <flipHorizontally>false</flipHorizontally>
+      <flipVertically>false</flipVertically>
+    </attributes>
+    <attributes name="integer">
+      <tileWidth>100</tileWidth>
+      <tileHeight>100</tileHeight>
+    </attributes>
+    <attributes name="enumeration">
+      <blendingMode>0</blendingMode>
+      <horizontalAnchor>0</horizontalAnchor>
+      <horizontalWrap>0</horizontalWrap>
+      <verticalAnchor>0</verticalAnchor>
+      <verticalWrap>0</verticalWrap>
+    </attributes>
+  </aspects>
+  <aspects name="motion">
+    <attributes name="boolean" id="applyMaxSpeed">false</attributes>
+    <attributes name="point" id="linearVelocity">
+      <real name="y">0</real>
+      <real name="x">0</real>
+    </attributes>
+    <attributes name="real">
+      <angularVelocity>0</angularVelocity>
+      <maxSpeed>0</maxSpeed>
+    </attributes>
+  </aspects>
+  <aspects name="physics">
+    <attributes name="boolean">
+      <movable>false</movable>
+      <fixedRotation>false</fixedRotation>
+    </attributes>
+    <attributes name="enumeration" id="collisionShape">0</attributes>
+    <attributes name="real">
+      <restitution>1</restitution>
+      <friction>3</friction>
+      <angularDrag>0</angularDrag>
+      <drag>0</drag>
+      <density>1</density>
+    </attributes>
+  </aspects>
+  <attributes name="boolean" id="preloadArt">true</attributes>
+  <attributes name="color" id="color">
+    <real name="green">0.010851</real>
+    <real name="alpha">0.42</real>
+    <real name="blue">0</real>
+    <real name="red">1</real>
+  </attributes>
+  <attributes name="point" id="position">
+    <real name="y">0</real>
+    <real name="x">0</real>
+  </attributes>
+  <attributes name="name">Lava</attributes>
+  <attributes name="tags" />
+  <attributes name="angle" id="rotation">0</attributes>
+  <attributes name="image" id="image" />
+  <attributes name="size" id="size">
+    <real name="width">100</real>
+    <real name="height">100</real>
+  </attributes>
+  <attributes name="real" id="time">0</attributes>
+</opt>

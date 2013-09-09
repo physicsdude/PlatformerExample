@@ -1,0 +1,30 @@
+<opt longDescription="Running, Jumping, and environmental physics. This template has everything you need to get started building your own action/adventure platformer." instructions="Move left and right with the arrow keys. Press space to jump." PGFVersion="0.19" tags="template, platformer" GSCVersion="0.10.3" resolutionIndependence="0" resolution="12" title="Platformer Example">
+  <scenes name="scene">
+    <id269551></id269551>
+    <id526375></id526375>
+  </scenes>
+  <plugins name="attributes">
+    <qqgamecenter name="boolean" id="enabled">false</qqgamecenter>
+    <playhaven></playhaven>
+  </plugins>
+  <prototypes name="actor">
+    <id196921></id196921>
+    <id387676></id387676>
+    <id397075></id397075>
+    <id183830></id183830>
+    <id214699></id214699>
+    <id495883></id495883>
+    <id590977></id590977>
+    <id892234></id892234>
+    <id669251></id669251>
+    <id344393></id344393>
+    <id295030></id295030>
+  </prototypes>
+  <attributes name="actorTags" />
+  <attributes name="name">default name</attributes>
+  <attributes name="size" id="displaySize">
+    <real name="width">568</real>
+    <real name="height">320</real>
+  </attributes>
+  <attributes name="real" id="time">0</attributes>
+</opt>

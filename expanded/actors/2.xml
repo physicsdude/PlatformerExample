@@ -1,0 +1,640 @@
+<opt PGFVersion="0.19" id="id295030" GSCVersion="0.10.3">
+  <behaviors name="behavior">
+    <id178688 class="ControlCameraBehavior" enabled="true">
+      <attributes name="name">Control Camera</attributes>
+      <attributes name="bundleName">ControlCamera.behavior</attributes>
+    </id178688>
+    <id417310 class="CompoundBehavior" enabled="true">
+      <behaviors name="behavior">
+        <id551933 class="CollideBehavior" enabled="true">
+          <attributes name="index" id="mode">0</attributes>
+          <attributes name="name">Collide with solid area</attributes>
+          <attributes name="actorTag" />
+          <attributes name="prototypeKey">id669251</attributes>
+          <attributes name="bundleName">Collide.behavior</attributes>
+        </id551933>
+        <id163803 class="RuleBehavior" enabled="true">
+          <elseBehaviors></elseBehaviors>
+          <behaviors name="behavior" id="id640162" class="ChangeImageAction" enabled="true">
+            <attributes name="name">Change Image</attributes>
+            <attributes name="bundleName">ChangeImage.behavior</attributes>
+            <attributes name="image" id="image">fall_R</attributes>
+          </behaviors>
+          <attributes name="name">Lava Fall</attributes>
+          <attributes name="bundleName">Rule.behavior</attributes>
+          <attributes name="real" id="compoundConditionKind">0</attributes>
+          <conditions eventType="overlaps or collides" name="condition" id="id819509">
+            <predicate type="collision">
+              <attributes name="name">default name</attributes>
+              <attributes name="actorTag" />
+              <attributes name="prototypeKey">id397075</attributes>
+              <attributes name="real" id="mode">0</attributes>
+            </predicate>
+            <attributes name="index" id="conditionType">0</attributes>
+            <attributes name="text" id="name">default name</attributes>
+          </conditions>
+        </id163803>
+        <id641132 class="CollideBehavior" enabled="true">
+          <attributes name="index" id="mode">0</attributes>
+          <attributes name="name">Collide with the InvisiSpring</attributes>
+          <attributes name="actorTag" />
+          <attributes name="prototypeKey">id196921</attributes>
+          <attributes name="bundleName">Collide.behavior</attributes>
+        </id641132>
+      </behaviors>
+      <attributes name="name">Collisions</attributes>
+      <attributes name="bundleName">Group.behavior</attributes>
+    </id417310>
+    <id399270 class="CompoundBehavior" enabled="true">
+      <behaviors name="behavior">
+        <id565387 class="RuleBehavior" enabled="true">
+          <elseBehaviors></elseBehaviors>
+          <behaviors name="behavior">
+            <id687586 class="PlaySoundAction" enabled="true">
+              <attributes name="boolean">
+                <runToCompletion>true</runToCompletion>
+                <dopplerShift>false</dopplerShift>
+                <loop>false</loop>
+                <positional>false</positional>
+              </attributes>
+              <attributes name="name">Play Sound</attributes>
+              <attributes name="bundleName">PlaySound.behavior</attributes>
+              <attributes name="real">
+                <volume>1</volume>
+                <pitch>1</pitch>
+              </attributes>
+              <attributes name="sound" id="soundName">jump</attributes>
+            </id687586>
+            <id315792 class="ChangeAttributeAction" enabled="true">
+              <attributes name="targetAttribute">self.aspects.motion.attributes.linearVelocity.y</attributes>
+              <attributes name="RHS">500</attributes>
+              <attributes name="name">Change Attribute</attributes>
+              <attributes name="bundleName">ChangeAttribute.behavior</attributes>
+            </id315792>
+          </behaviors>
+          <attributes name="name">Jumping Control</attributes>
+          <attributes name="bundleName">Rule.behavior</attributes>
+          <attributes name="real" id="compoundConditionKind">0</attributes>
+          <conditions name="condition">
+            <id892158 eventType="key">
+              <predicate type="key">
+                <attributes name="mode">down</attributes>
+                <attributes name="name">default name</attributes>
+                <attributes name="keyString">space</attributes>
+              </predicate>
+              <attributes name="index" id="conditionType">0</attributes>
+              <attributes name="text" id="name">default name</attributes>
+            </id892158>
+            <id935174 eventType="mouse button">
+              <predicate type="number">
+                <attributes name="operator">=</attributes>
+                <attributes name="name">default name</attributes>
+                <attributes name="real" id="RHS">0</attributes>
+              </predicate>
+              <attributes name="index" id="conditionType">1</attributes>
+              <attributes name="subjectAttribute">self.aspects.motion.attributes.linearVelocity.y</attributes>
+              <attributes name="name">default name</attributes>
+            </id935174>
+            <id770781 eventType="overlaps or collides">
+              <predicate type="boolean">
+                <attributes name="index" id="RHS">1</attributes>
+              </predicate>
+              <attributes name="index" id="conditionType">1</attributes>
+              <attributes name="subjectAttribute">self.attributes.id166472</attributes>
+              <attributes name="name">default name</attributes>
+            </id770781>
+          </conditions>
+        </id565387>
+        <id738493 class="CompoundBehavior" enabled="true">
+          <behaviors name="behavior">
+            <id824372 class="RuleBehavior" enabled="true">
+              <elseBehaviors></elseBehaviors>
+              <behaviors name="behavior" id="id293837" class="AnimateBehavior" enabled="true">
+                <attributes name="boolean">
+                  <restoreActorImage>true</restoreActorImage>
+                  <loop>true</loop>
+                </attributes>
+                <attributes name="index" id="speed">10</attributes>
+                <attributes name="images">run_L1	run_L2	run_L3	run_L4	run_L5	run_L6	run_L7	run_L8</attributes>
+                <attributes name="name">Animate</attributes>
+                <attributes name="bundleName">Animate.behavior</attributes>
+              </behaviors>
+              <attributes name="name">Animate Left</attributes>
+              <attributes name="bundleName">Rule.behavior</attributes>
+              <attributes name="real" id="compoundConditionKind">0</attributes>
+              <conditions name="condition">
+                <id103127 eventType="mouse button">
+                  <predicate type="number">
+                    <attributes name="operator">&lt;</attributes>
+                    <attributes name="name">default name</attributes>
+                    <attributes name="real" id="RHS">0</attributes>
+                  </predicate>
+                  <attributes name="index" id="conditionType">1</attributes>
+                  <attributes name="subjectAttribute">self.aspects.motion.attributes.linearVelocity.x</attributes>
+                  <attributes name="name">default name</attributes>
+                </id103127>
+                <id734398 eventType="mouse button">
+                  <predicate type="boolean">
+                    <attributes name="index" id="RHS">1</attributes>
+                    <attributes name="operator">=</attributes>
+                    <attributes name="name">default name</attributes>
+                  </predicate>
+                  <attributes name="index" id="conditionType">1</attributes>
+                  <attributes name="subjectAttribute">self.attributes.id166472</attributes>
+                  <attributes name="name">default name</attributes>
+                </id734398>
+                <id909579 eventType="mouse button">
+                  <predicate type="number">
+                    <attributes name="operator">=</attributes>
+                    <attributes name="name">default name</attributes>
+                    <attributes name="real" id="RHS">0</attributes>
+                  </predicate>
+                  <attributes name="index" id="conditionType">1</attributes>
+                  <attributes name="subjectAttribute">self.aspects.motion.attributes.linearVelocity.y</attributes>
+                  <attributes name="name">default name</attributes>
+                </id909579>
+              </conditions>
+            </id824372>
+            <id447920 class="RuleBehavior" enabled="true">
+              <elseBehaviors></elseBehaviors>
+              <behaviors name="behavior" id="id293837" class="AnimateBehavior" enabled="true">
+                <attributes name="boolean">
+                  <restoreActorImage>true</restoreActorImage>
+                  <loop>true</loop>
+                </attributes>
+                <attributes name="index" id="speed">10</attributes>
+                <attributes name="images">run_R1	run_R2	run_R3	run_R4	run_R5	run_R6	run_R7	run_R8</attributes>
+                <attributes name="name">Animate</attributes>
+                <attributes name="bundleName">Animate.behavior</attributes>
+              </behaviors>
+              <attributes name="name">Animate Right</attributes>
+              <attributes name="bundleName">Rule.behavior</attributes>
+              <attributes name="real" id="compoundConditionKind">0</attributes>
+              <conditions name="condition">
+                <id103127 eventType="mouse button">
+                  <predicate type="number">
+                    <attributes name="operator">&gt;</attributes>
+                    <attributes name="name">default name</attributes>
+                    <attributes name="real" id="RHS">0</attributes>
+                  </predicate>
+                  <attributes name="index" id="conditionType">1</attributes>
+                  <attributes name="subjectAttribute">self.aspects.motion.attributes.linearVelocity.x</attributes>
+                  <attributes name="name">default name</attributes>
+                </id103127>
+                <id734398 eventType="mouse button">
+                  <predicate type="boolean">
+                    <attributes name="index" id="RHS">1</attributes>
+                    <attributes name="operator">=</attributes>
+                    <attributes name="name">default name</attributes>
+                  </predicate>
+                  <attributes name="index" id="conditionType">1</attributes>
+                  <attributes name="subjectAttribute">self.attributes.id166472</attributes>
+                  <attributes name="name">default name</attributes>
+                </id734398>
+                <id508902 eventType="mouse button">
+                  <predicate type="number">
+                    <attributes name="operator">=</attributes>
+                    <attributes name="name">default name</attributes>
+                    <attributes name="real" id="RHS">0</attributes>
+                  </predicate>
+                  <attributes name="index" id="conditionType">1</attributes>
+                  <attributes name="subjectAttribute">self.aspects.motion.attributes.linearVelocity.y</attributes>
+                  <attributes name="name">default name</attributes>
+                </id508902>
+              </conditions>
+            </id447920>
+            <id229682 class="RuleBehavior" enabled="true">
+              <elseBehaviors></elseBehaviors>
+              <behaviors name="behavior">
+                <id299422 class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes name="targetAttribute">self.attributes.id577050</attributes>
+                  <attributes name="RHS">false</attributes>
+                  <attributes name="name">Constrain Attribute</attributes>
+                  <attributes name="bundleName">ConstrainAttribute.behavior</attributes>
+                </id299422>
+                <id902651 class="AccelerateBehavior" enabled="true">
+                  <attributes name="index" id="space">0</attributes>
+                  <attributes name="name">Accelerate</attributes>
+                  <attributes name="bundleName">Accelerate.behavior</attributes>
+                  <attributes name="angle" id="direction">180</attributes>
+                  <attributes name="real" id="acceleration">1500</attributes>
+                </id902651>
+              </behaviors>
+              <attributes name="name">Move Left</attributes>
+              <attributes name="bundleName">Rule.behavior</attributes>
+              <attributes name="real" id="compoundConditionKind">0</attributes>
+              <conditions eventType="key" name="condition" id="id521251">
+                <predicate type="key">
+                  <attributes name="mode">down</attributes>
+                  <attributes name="name">default name</attributes>
+                  <attributes name="keyString">left</attributes>
+                </predicate>
+                <attributes name="index" id="conditionType">0</attributes>
+                <attributes name="text" id="name">default name</attributes>
+              </conditions>
+            </id229682>
+            <id299335 class="RuleBehavior" enabled="true">
+              <elseBehaviors></elseBehaviors>
+              <behaviors name="behavior">
+                <id894853 class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes name="targetAttribute">self.attributes.id577050</attributes>
+                  <attributes name="RHS">true</attributes>
+                  <attributes name="name">Constrain Attribute</attributes>
+                  <attributes name="bundleName">ConstrainAttribute.behavior</attributes>
+                </id894853>
+                <id902651 class="AccelerateBehavior" enabled="true">
+                  <attributes name="index" id="space">0</attributes>
+                  <attributes name="name">Accelerate</attributes>
+                  <attributes name="bundleName">Accelerate.behavior</attributes>
+                  <attributes name="angle" id="direction">0</attributes>
+                  <attributes name="real" id="acceleration">1500</attributes>
+                </id902651>
+              </behaviors>
+              <attributes name="name">Move Right</attributes>
+              <attributes name="bundleName">Rule.behavior</attributes>
+              <attributes name="real" id="compoundConditionKind">0</attributes>
+              <conditions eventType="key" name="condition" id="id521251">
+                <predicate type="key">
+                  <attributes name="mode">down</attributes>
+                  <attributes name="name">default name</attributes>
+                  <attributes name="keyString">right</attributes>
+                </predicate>
+                <attributes name="index" id="conditionType">0</attributes>
+                <attributes name="text" id="name">default name</attributes>
+              </conditions>
+            </id299335>
+          </behaviors>
+          <attributes name="name">Left-Right Control</attributes>
+          <attributes name="bundleName">Group.behavior</attributes>
+        </id738493>
+        <id132678 class="RuleBehavior" enabled="true">
+          <elseBehaviors name="behavior" id="id226825" class="ConstrainAttributeBehavior" enabled="true">
+            <attributes name="targetAttribute">self.attributes.id166472</attributes>
+            <attributes name="RHS">false</attributes>
+            <attributes name="name">Constrain Attribute</attributes>
+            <attributes name="bundleName">ConstrainAttribute.behavior</attributes>
+          </elseBehaviors>
+          <behaviors name="behavior" id="id868490" class="ConstrainAttributeBehavior" enabled="true">
+            <attributes name="targetAttribute">self.attributes.id166472</attributes>
+            <attributes name="RHS">true</attributes>
+            <attributes name="name">Constrain Attribute</attributes>
+            <attributes name="bundleName">ConstrainAttribute.behavior</attributes>
+          </behaviors>
+          <attributes name="name">Determine if Grounded</attributes>
+          <attributes name="bundleName">Rule.behavior</attributes>
+          <attributes name="real" id="compoundConditionKind">0</attributes>
+          <conditions eventType="overlaps or collides" name="condition" id="id647259">
+            <predicate type="collision">
+              <attributes name="name">default name</attributes>
+              <attributes name="actorTag" />
+              <attributes name="prototypeKey">id214699</attributes>
+              <attributes name="real" id="mode">0</attributes>
+            </predicate>
+            <attributes name="index" id="conditionType">0</attributes>
+            <attributes name="text" id="name">default name</attributes>
+          </conditions>
+        </id132678>
+        <id864362 class="CompoundBehavior" enabled="true">
+          <behaviors name="behavior" id="id782713" class="TimerBehavior" enabled="true">
+            <behaviors name="behavior">
+              <id859027 class="RuleBehavior" enabled="true">
+                <elseBehaviors></elseBehaviors>
+                <behaviors name="behavior" id="id499982" class="ChangeImageAction" enabled="true">
+                  <attributes name="name">Change Image</attributes>
+                  <attributes name="bundleName">ChangeImage.behavior</attributes>
+                  <attributes name="image" id="image">stand_L</attributes>
+                </behaviors>
+                <attributes name="name">FacingLeft</attributes>
+                <attributes name="bundleName">Rule.behavior</attributes>
+                <attributes name="real" id="compoundConditionKind">0</attributes>
+                <conditions name="condition">
+                  <id317344 eventType="mouse button">
+                    <predicate type="boolean">
+                      <attributes name="index" id="RHS">0</attributes>
+                      <attributes name="operator">=</attributes>
+                      <attributes name="name">default name</attributes>
+                    </predicate>
+                    <attributes name="index" id="conditionType">1</attributes>
+                    <attributes name="subjectAttribute">self.attributes.id577050</attributes>
+                    <attributes name="name">default name</attributes>
+                  </id317344>
+                  <id516380 eventType="overlaps or collides">
+                    <predicate type="boolean">
+                      <attributes name="index" id="RHS">1</attributes>
+                      <attributes name="operator">=</attributes>
+                      <attributes name="name">default name</attributes>
+                    </predicate>
+                    <attributes name="index" id="conditionType">1</attributes>
+                    <attributes name="subjectAttribute">self.attributes.id166472</attributes>
+                    <attributes name="name">default name</attributes>
+                  </id516380>
+                  <id738300 eventType="mouse button">
+                    <predicate type="number">
+                      <attributes name="operator">=</attributes>
+                      <attributes name="name">default name</attributes>
+                      <attributes name="real" id="RHS">0</attributes>
+                    </predicate>
+                    <attributes name="index" id="conditionType">1</attributes>
+                    <attributes name="subjectAttribute">self.aspects.motion.attributes.linearVelocity.x</attributes>
+                    <attributes name="name">default name</attributes>
+                  </id738300>
+                </conditions>
+              </id859027>
+              <id686904 class="RuleBehavior" enabled="true">
+                <elseBehaviors></elseBehaviors>
+                <behaviors name="behavior" id="id503667" class="ChangeImageAction" enabled="true">
+                  <attributes name="name">Change Image</attributes>
+                  <attributes name="bundleName">ChangeImage.behavior</attributes>
+                  <attributes name="image" id="image">stand_R</attributes>
+                </behaviors>
+                <attributes name="name">FacingRight</attributes>
+                <attributes name="bundleName">Rule.behavior</attributes>
+                <attributes name="real" id="compoundConditionKind">0</attributes>
+                <conditions name="condition">
+                  <id415707 eventType="mouse button">
+                    <predicate type="boolean">
+                      <attributes name="index" id="RHS">1</attributes>
+                      <attributes name="operator">=</attributes>
+                      <attributes name="name">default name</attributes>
+                    </predicate>
+                    <attributes name="index" id="conditionType">1</attributes>
+                    <attributes name="subjectAttribute">self.attributes.id577050</attributes>
+                    <attributes name="name">default name</attributes>
+                  </id415707>
+                  <id712213 eventType="overlaps or collides">
+                    <predicate type="boolean">
+                      <attributes name="index" id="RHS">1</attributes>
+                      <attributes name="operator">=</attributes>
+                      <attributes name="name">default name</attributes>
+                    </predicate>
+                    <attributes name="index" id="conditionType">1</attributes>
+                    <attributes name="subjectAttribute">self.attributes.id166472</attributes>
+                    <attributes name="name">default name</attributes>
+                  </id712213>
+                  <id913965 eventType="mouse button">
+                    <predicate type="number">
+                      <attributes name="operator">=</attributes>
+                      <attributes name="name">default name</attributes>
+                      <attributes name="real" id="RHS">0</attributes>
+                    </predicate>
+                    <attributes name="index" id="conditionType">1</attributes>
+                    <attributes name="subjectAttribute">self.aspects.motion.attributes.linearVelocity.x</attributes>
+                    <attributes name="name">default name</attributes>
+                  </id913965>
+                </conditions>
+              </id686904>
+              <id199271 class="RuleBehavior" enabled="true">
+                <elseBehaviors></elseBehaviors>
+                <behaviors name="behavior" id="id782235" class="ChangeImageAction" enabled="true">
+                  <attributes name="name">Change Image</attributes>
+                  <attributes name="bundleName">ChangeImage.behavior</attributes>
+                  <attributes name="image" id="image">fall_L</attributes>
+                </behaviors>
+                <attributes name="name">FallingLeft</attributes>
+                <attributes name="bundleName">Rule.behavior</attributes>
+                <attributes name="real" id="compoundConditionKind">0</attributes>
+                <conditions name="condition">
+                  <id306832 eventType="mouse button">
+                    <predicate type="number">
+                      <attributes name="operator">&lt;</attributes>
+                      <attributes name="name">default name</attributes>
+                      <attributes name="real" id="RHS">-0.3</attributes>
+                    </predicate>
+                    <attributes name="index" id="conditionType">1</attributes>
+                    <attributes name="subjectAttribute">self.aspects.motion.attributes.linearVelocity.y</attributes>
+                    <attributes name="name">default name</attributes>
+                  </id306832>
+                  <id437779 eventType="mouse button">
+                    <predicate type="boolean">
+                      <attributes name="index" id="RHS">0</attributes>
+                      <attributes name="operator">=</attributes>
+                      <attributes name="name">default name</attributes>
+                    </predicate>
+                    <attributes name="index" id="conditionType">1</attributes>
+                    <attributes name="subjectAttribute">self.attributes.id166472</attributes>
+                    <attributes name="name">default name</attributes>
+                  </id437779>
+                  <id529370 eventType="mouse button">
+                    <predicate type="boolean">
+                      <attributes name="index" id="RHS">0</attributes>
+                      <attributes name="operator">=</attributes>
+                      <attributes name="name">default name</attributes>
+                    </predicate>
+                    <attributes name="index" id="conditionType">1</attributes>
+                    <attributes name="subjectAttribute">self.attributes.id577050</attributes>
+                    <attributes name="name">default name</attributes>
+                  </id529370>
+                </conditions>
+              </id199271>
+              <id546046 class="RuleBehavior" enabled="true">
+                <elseBehaviors></elseBehaviors>
+                <behaviors name="behavior" id="id751611" class="ChangeImageAction" enabled="true">
+                  <attributes name="name">Change Image</attributes>
+                  <attributes name="bundleName">ChangeImage.behavior</attributes>
+                  <attributes name="image" id="image">jump_R</attributes>
+                </behaviors>
+                <attributes name="name">JumpingRight</attributes>
+                <attributes name="bundleName">Rule.behavior</attributes>
+                <attributes name="real" id="compoundConditionKind">0</attributes>
+                <conditions name="condition">
+                  <id306832 eventType="mouse button">
+                    <predicate type="number">
+                      <attributes name="operator">&gt;</attributes>
+                      <attributes name="name">default name</attributes>
+                      <attributes name="real" id="RHS">0.1</attributes>
+                    </predicate>
+                    <attributes name="index" id="conditionType">1</attributes>
+                    <attributes name="subjectAttribute">self.aspects.motion.attributes.linearVelocity.y</attributes>
+                    <attributes name="name">default name</attributes>
+                  </id306832>
+                  <id808824 eventType="mouse button">
+                    <predicate type="boolean">
+                      <attributes name="index" id="RHS">0</attributes>
+                      <attributes name="operator">=</attributes>
+                      <attributes name="name">default name</attributes>
+                    </predicate>
+                    <attributes name="index" id="conditionType">1</attributes>
+                    <attributes name="subjectAttribute">self.attributes.id166472</attributes>
+                    <attributes name="name">default name</attributes>
+                  </id808824>
+                  <id529370 eventType="mouse button">
+                    <predicate type="boolean">
+                      <attributes name="index" id="RHS">1</attributes>
+                      <attributes name="operator">=</attributes>
+                      <attributes name="name">default name</attributes>
+                    </predicate>
+                    <attributes name="index" id="conditionType">1</attributes>
+                    <attributes name="subjectAttribute">self.attributes.id577050</attributes>
+                    <attributes name="name">default name</attributes>
+                  </id529370>
+                </conditions>
+              </id546046>
+              <id481082 class="RuleBehavior" enabled="true">
+                <elseBehaviors></elseBehaviors>
+                <behaviors name="behavior" id="id751611" class="ChangeImageAction" enabled="true">
+                  <attributes name="name">Change Image</attributes>
+                  <attributes name="bundleName">ChangeImage.behavior</attributes>
+                  <attributes name="image" id="image">jump_L</attributes>
+                </behaviors>
+                <attributes name="name">JumpingLeft</attributes>
+                <attributes name="bundleName">Rule.behavior</attributes>
+                <attributes name="real" id="compoundConditionKind">0</attributes>
+                <conditions name="condition">
+                  <id306832 eventType="mouse button">
+                    <predicate type="number">
+                      <attributes name="operator">&gt;</attributes>
+                      <attributes name="name">default name</attributes>
+                      <attributes name="real" id="RHS">0.1</attributes>
+                    </predicate>
+                    <attributes name="index" id="conditionType">1</attributes>
+                    <attributes name="subjectAttribute">self.aspects.motion.attributes.linearVelocity.y</attributes>
+                    <attributes name="name">default name</attributes>
+                  </id306832>
+                  <id851550 eventType="mouse button">
+                    <predicate type="boolean">
+                      <attributes name="index" id="RHS">0</attributes>
+                      <attributes name="operator">=</attributes>
+                      <attributes name="name">default name</attributes>
+                    </predicate>
+                    <attributes name="index" id="conditionType">1</attributes>
+                    <attributes name="subjectAttribute">self.attributes.id166472</attributes>
+                    <attributes name="name">default name</attributes>
+                  </id851550>
+                  <id529370 eventType="mouse button">
+                    <predicate type="boolean">
+                      <attributes name="index" id="RHS">0</attributes>
+                      <attributes name="operator">=</attributes>
+                      <attributes name="name">default name</attributes>
+                    </predicate>
+                    <attributes name="index" id="conditionType">1</attributes>
+                    <attributes name="subjectAttribute">self.attributes.id577050</attributes>
+                    <attributes name="name">default name</attributes>
+                  </id529370>
+                </conditions>
+              </id481082>
+              <id360926 class="RuleBehavior" enabled="true">
+                <elseBehaviors></elseBehaviors>
+                <behaviors name="behavior" id="id751611" class="ChangeImageAction" enabled="true">
+                  <attributes name="name">Change Image</attributes>
+                  <attributes name="bundleName">ChangeImage.behavior</attributes>
+                  <attributes name="image" id="image">fall_R</attributes>
+                </behaviors>
+                <attributes name="name">FallingRight</attributes>
+                <attributes name="bundleName">Rule.behavior</attributes>
+                <attributes name="real" id="compoundConditionKind">0</attributes>
+                <conditions name="condition">
+                  <id306832 eventType="mouse button">
+                    <predicate type="number">
+                      <attributes name="operator">&lt;</attributes>
+                      <attributes name="name">default name</attributes>
+                      <attributes name="real" id="RHS">-0.3</attributes>
+                    </predicate>
+                    <attributes name="index" id="conditionType">1</attributes>
+                    <attributes name="subjectAttribute">self.aspects.motion.attributes.linearVelocity.y</attributes>
+                    <attributes name="name">default name</attributes>
+                  </id306832>
+                  <id395932 eventType="mouse button">
+                    <predicate type="boolean">
+                      <attributes name="index" id="RHS">0</attributes>
+                      <attributes name="operator">=</attributes>
+                      <attributes name="name">default name</attributes>
+                    </predicate>
+                    <attributes name="index" id="conditionType">1</attributes>
+                    <attributes name="subjectAttribute">self.attributes.id166472</attributes>
+                    <attributes name="name">default name</attributes>
+                  </id395932>
+                  <id529370 eventType="mouse button">
+                    <predicate type="boolean">
+                      <attributes name="index" id="RHS">1</attributes>
+                      <attributes name="operator">=</attributes>
+                      <attributes name="name">default name</attributes>
+                    </predicate>
+                    <attributes name="index" id="conditionType">1</attributes>
+                    <attributes name="subjectAttribute">self.attributes.id577050</attributes>
+                    <attributes name="name">default name</attributes>
+                  </id529370>
+                </conditions>
+              </id360926>
+            </behaviors>
+            <attributes name="boolean" id="runToCompletion">true</attributes>
+            <attributes name="index" id="timerType">0</attributes>
+            <attributes name="name">Timer - Check these conditions very often</attributes>
+            <attributes name="bundleName">Timer.behavior</attributes>
+            <attributes name="real" id="interval">0.01</attributes>
+          </behaviors>
+          <attributes name="name">Pose States</attributes>
+          <attributes name="bundleName">Group.behavior</attributes>
+        </id864362>
+      </behaviors>
+      <attributes name="name">Character Controls</attributes>
+      <attributes name="bundleName">Group.behavior</attributes>
+    </id399270>
+  </behaviors>
+  <aspects name="graphics">
+    <attributes name="boolean">
+      <visible>true</visible>
+      <flipHorizontally>false</flipHorizontally>
+      <flipVertically>false</flipVertically>
+    </attributes>
+    <attributes name="integer">
+      <tileWidth>55</tileWidth>
+      <tileHeight>58</tileHeight>
+    </attributes>
+    <attributes name="enumeration">
+      <blendingMode>0</blendingMode>
+      <horizontalAnchor>0</horizontalAnchor>
+      <horizontalWrap>1</horizontalWrap>
+      <verticalAnchor>0</verticalAnchor>
+      <verticalWrap>1</verticalWrap>
+    </attributes>
+  </aspects>
+  <aspects name="motion">
+    <attributes name="boolean" id="applyMaxSpeed">true</attributes>
+    <attributes name="point" id="linearVelocity">
+      <real name="y">0</real>
+      <real name="x">0</real>
+    </attributes>
+    <attributes name="real">
+      <angularVelocity>0</angularVelocity>
+      <maxSpeed>400</maxSpeed>
+    </attributes>
+  </aspects>
+  <aspects name="physics">
+    <attributes name="boolean">
+      <movable>true</movable>
+      <fixedRotation>true</fixedRotation>
+    </attributes>
+    <attributes name="enumeration" id="collisionShape">0</attributes>
+    <attributes name="real">
+      <restitution>0</restitution>
+      <friction>1</friction>
+      <angularDrag>0</angularDrag>
+      <drag>0</drag>
+      <density>1</density>
+    </attributes>
+  </aspects>
+  <attributes name="boolean">
+    <preloadArt>true</preloadArt>
+    <FacingRight id="id577050">true</FacingRight>
+    <Grounded? id="id166472">true</Grounded?>
+  </attributes>
+  <attributes name="color" id="color">
+    <real name="green">1</real>
+    <real name="alpha">1</real>
+    <real name="blue">1</real>
+    <real name="red">1</real>
+  </attributes>
+  <attributes name="point" id="position">
+    <real name="y">0</real>
+    <real name="x">0</real>
+  </attributes>
+  <attributes name="name">Player</attributes>
+  <attributes name="tags" />
+  <attributes name="angle" id="rotation">0</attributes>
+  <attributes name="image" id="image">stand_R</attributes>
+  <attributes name="size" id="size">
+    <real name="width">55</real>
+    <real name="height">58</real>
+  </attributes>
+  <attributes name="real" id="time">0</attributes>
+</opt>
