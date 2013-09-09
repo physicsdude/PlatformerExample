@@ -1,0 +1,78 @@
+<opt PGFVersion="0.19" id="id876674" GSCVersion="0.10.3">
+  <attributes name="boolean">
+    <wrapX>false</wrapX>
+    <wrapY>false</wrapY>
+  </attributes>
+  <attributes name="color" id="color">
+    <real name="green">0</real>
+    <real name="alpha">1</real>
+    <real name="blue">0</real>
+    <real name="red">0</real>
+  </attributes>
+  <attributes name="rect" id="camera">
+    <point id="origin">
+      <real name="y">0</real>
+      <real name="x">0</real>
+    </point>
+    <size name="trackingArea">
+      <real name="width">488</real>
+      <real name="height">240</real>
+    </size>
+    <size name="size">
+      <real name="width">568</real>
+      <real name="height">320</real>
+    </size>
+    <real id="rotation">0</real>
+  </attributes>
+  <attributes name="point" id="gravity">
+    <real name="y">1000</real>
+    <real name="x">0</real>
+  </attributes>
+  <attributes name="text" id="name">Scene 2</attributes>
+  <attributes name="attributes" id="autorotate">
+    <boolean name="landscapeRight">false</boolean>
+    <boolean name="landscapeLeft">true</boolean>
+    <boolean name="portraitUpsideDown">false</boolean>
+    <boolean name="portrait">false</boolean>
+  </attributes>
+  <attributes name="size" id="size">
+    <real name="width">568</real>
+    <real name="height">320</real>
+  </attributes>
+  <attributes name="real" id="time">0</attributes>
+  <layers name="layer" id="id546118">
+    <attributes name="boolean" id="scrollable">true</attributes>
+    <attributes name="text" id="name">Background</attributes>
+    <actors name="actor">
+      <id312116 prototype="id295030">
+        <attributes name="point" id="position">
+          <real name="y">227.781</real>
+          <real name="x">188.156</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">55</real>
+          <real name="height">58</real>
+        </attributes>
+        <aspects></aspects>
+      </id312116>
+      <id284189 prototype="id974044">
+        <attributes name="point" id="position">
+          <real name="y">97.2891</real>
+          <real name="x">339.477</real>
+        </attributes>
+        <aspects></aspects>
+      </id284189>
+      <id753596 prototype="id516797">
+        <attributes name="point" id="position">
+          <real name="y">92.0625</real>
+          <real name="x">199.395</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">35</real>
+          <real name="height">35</real>
+        </attributes>
+        <aspects></aspects>
+      </id753596>
+    </actors>
+  </layers>
+</opt>

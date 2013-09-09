@@ -1,4 +1,4 @@
-<opt PGFVersion="0.19" id="id974044" GSCVersion="0.10.3">
+<opt PGFVersion="0.19" id="id516797" GSCVersion="0.10.3">
   <behaviors></behaviors>
   <aspects name="graphics">
     <attributes name="boolean">
@@ -7,8 +7,8 @@
       <flipVertically>false</flipVertically>
     </attributes>
     <attributes name="integer">
-      <tileWidth>35</tileWidth>
-      <tileHeight>35</tileHeight>
+      <tileWidth>100</tileWidth>
+      <tileHeight>100</tileHeight>
     </attributes>
     <attributes name="enumeration">
       <blendingMode>0</blendingMode>
@@ -46,7 +46,7 @@
   <attributes name="boolean" id="preloadArt">true</attributes>
   <attributes name="color" id="color">
     <real name="green">0.4</real>
-    <real name="alpha">0.9</real>
+    <real name="alpha">1</real>
     <real name="blue">0.2</real>
     <real name="red">0.6</real>
   </attributes>
@@ -54,13 +54,13 @@
     <real name="y">0</real>
     <real name="x">0</real>
   </attributes>
-  <attributes name="name">Block</attributes>
+  <attributes name="name">RealBlock</attributes>
   <attributes name="tags" />
   <attributes name="angle" id="rotation">0</attributes>
   <attributes name="image" id="image" />
   <attributes name="size" id="size">
-    <real name="width">35</real>
-    <real name="height">35</real>
+    <real name="width">100</real>
+    <real name="height">100</real>
   </attributes>
   <attributes name="real" id="time">0</attributes>
 </opt>

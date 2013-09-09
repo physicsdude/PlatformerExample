@@ -41,6 +41,13 @@
           <attributes name="prototypeKey">id196921</attributes>
           <attributes name="bundleName">Collide.behavior</attributes>
         </id641132>
+        <id312428 class="CollideBehavior" enabled="true">
+          <attributes name="index" id="mode">0</attributes>
+          <attributes name="name">Collide</attributes>
+          <attributes name="actorTag" />
+          <attributes name="prototypeKey">id516797</attributes>
+          <attributes name="bundleName">Collide.behavior</attributes>
+        </id312428>
       </behaviors>
       <attributes name="name">Collisions</attributes>
       <attributes name="bundleName">Group.behavior</attributes>
@@ -282,16 +289,28 @@
           </behaviors>
           <attributes name="name">Determine if Grounded</attributes>
           <attributes name="bundleName">Rule.behavior</attributes>
-          <attributes name="real" id="compoundConditionKind">0</attributes>
-          <conditions eventType="overlaps or collides" name="condition" id="id647259">
-            <predicate type="collision">
-              <attributes name="name">default name</attributes>
-              <attributes name="actorTag" />
-              <attributes name="prototypeKey">id214699</attributes>
-              <attributes name="real" id="mode">0</attributes>
-            </predicate>
-            <attributes name="index" id="conditionType">0</attributes>
-            <attributes name="text" id="name">default name</attributes>
+          <attributes name="real" id="compoundConditionKind">1</attributes>
+          <conditions name="condition">
+            <id494941 pluginPredicateTypeIndex="0" eventType="overlaps or collides">
+              <predicate type="collision">
+                <attributes name="text">
+                  <actorTag></actorTag>
+                  <prototypeKey>id516797</prototypeKey>
+                </attributes>
+                <attributes name="real" id="mode">0</attributes>
+              </predicate>
+              <attributes name="index" id="conditionType">0</attributes>
+            </id494941>
+            <id647259 eventType="overlaps or collides">
+              <predicate type="collision">
+                <attributes name="name">default name</attributes>
+                <attributes name="actorTag" />
+                <attributes name="prototypeKey">id214699</attributes>
+                <attributes name="real" id="mode">0</attributes>
+              </predicate>
+              <attributes name="index" id="conditionType">0</attributes>
+              <attributes name="text" id="name">default name</attributes>
+            </id647259>
           </conditions>
         </id132678>
         <id864362 class="CompoundBehavior" enabled="true">

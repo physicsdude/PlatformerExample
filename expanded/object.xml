@@ -1,5 +1,6 @@
 <opt longDescription="Running, Jumping, and environmental physics. This template has everything you need to get started building your own action/adventure platformer." instructions="Move left and right with the arrow keys. Press space to jump." PGFVersion="0.19" tags="template, platformer" GSCVersion="0.10.3" resolutionIndependence="0" resolution="12" title="Platformer Example">
   <scenes name="scene">
+    <id876674></id876674>
     <id269551></id269551>
     <id526375></id526375>
   </scenes>
@@ -12,11 +13,12 @@
     <id387676></id387676>
     <id397075></id397075>
     <id183830></id183830>
+    <id516797></id516797>
     <id214699></id214699>
     <id495883></id495883>
     <id590977></id590977>
-    <id974044></id974044>
     <id892234></id892234>
+    <id974044></id974044>
     <id669251></id669251>
     <id344393></id344393>
     <id295030></id295030>
