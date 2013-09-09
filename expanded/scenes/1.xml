@@ -112,6 +112,13 @@
         </attributes>
         <aspects></aspects>
       </id420589>
+      <id659574 prototype="id974044">
+        <attributes name="point" id="position">
+          <real name="y">185.57</real>
+          <real name="x">775.098</real>
+        </attributes>
+        <aspects></aspects>
+      </id659574>
       <id734083 prototype="id214699">
         <attributes name="point" id="position">
           <real name="y">285.5</real>
@@ -135,10 +142,17 @@
         </attributes>
         <aspects></aspects>
       </id868349>
+      <id361890 prototype="id892234">
+        <attributes name="point" id="position">
+          <real name="y">543.723</real>
+          <real name="x">350.98</real>
+        </attributes>
+        <aspects></aspects>
+      </id361890>
       <id985525 prototype="id295030">
         <attributes name="point" id="position">
-          <real name="y">544.5</real>
-          <real name="x">100</real>
+          <real name="y">544.094</real>
+          <real name="x">107.27</real>
         </attributes>
         <attributes name="size" id="size">
           <real name="width">50</real>
@@ -174,8 +188,12 @@
       </id246268>
       <id759262 prototype="id344393">
         <attributes name="point" id="position">
-          <real name="y">207</real>
-          <real name="x">949</real>
+          <real name="y">206.844</real>
+          <real name="x">948.387</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">64</real>
+          <real name="height">28</real>
         </attributes>
         <aspects></aspects>
       </id759262>
@@ -186,6 +204,13 @@
         </attributes>
         <aspects></aspects>
       </id424457>
+      <id524757 prototype="id344393">
+        <attributes name="point" id="position">
+          <real name="y">85.9883</real>
+          <real name="x">196.762</real>
+        </attributes>
+        <aspects></aspects>
+      </id524757>
       <id456079 prototype="id669251">
         <attributes name="point" id="position">
           <real name="y">290</real>
@@ -296,8 +321,8 @@
       </id263746>
       <id255091 prototype="id183830">
         <attributes name="point" id="position">
-          <real name="y">340</real>
-          <real name="x">512</real>
+          <real name="y">338.102</real>
+          <real name="x">510.867</real>
         </attributes>
         <attributes name="size" id="size">
           <real name="width">1024</real>
@@ -327,18 +352,6 @@
         </attributes>
         <aspects></aspects>
       </id347624>
-      <id636577 prototype="id669251">
-        <attributes name="point" id="position">
-          <real name="y">194.5</real>
-          <real name="x">696.5</real>
-        </attributes>
-        <attributes name="angle" id="rotation">0</attributes>
-        <attributes name="size" id="size">
-          <real name="width">94</real>
-          <real name="height">16</real>
-        </attributes>
-        <aspects></aspects>
-      </id636577>
       <id304041 prototype="id214699">
         <attributes name="point" id="position">
           <real name="y">144.5</real>
@@ -351,6 +364,18 @@
         </attributes>
         <aspects></aspects>
       </id304041>
+      <id636577 prototype="id669251">
+        <attributes name="point" id="position">
+          <real name="y">194.5</real>
+          <real name="x">696.5</real>
+        </attributes>
+        <attributes name="angle" id="rotation">0</attributes>
+        <attributes name="size" id="size">
+          <real name="width">94</real>
+          <real name="height">16</real>
+        </attributes>
+        <aspects></aspects>
+      </id636577>
       <id319076 prototype="id669251">
         <attributes name="point" id="position">
           <real name="y">341</real>
@@ -385,6 +410,17 @@
         </attributes>
         <aspects></aspects>
       </id819957>
+      <id195177 prototype="id974044">
+        <attributes name="point" id="position">
+          <real name="y">185.855</real>
+          <real name="x">847.465</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">35</real>
+          <real name="height">35</real>
+        </attributes>
+        <aspects></aspects>
+      </id195177>
       <id396144 prototype="id669251">
         <attributes name="point" id="position">
           <real name="y">87.5</real>
@@ -416,6 +452,7 @@
         <aspects></aspects>
       </id393858>
       <id992888 prototype="id669251">
+        <behaviors></behaviors>
         <attributes name="point" id="position">
           <real name="y">164</real>
           <real name="x">422.5</real>
@@ -614,6 +651,13 @@
         </attributes>
         <aspects></aspects>
       </id576318>
+      <id709369 prototype="id974044">
+        <attributes name="point" id="position">
+          <real name="y">185.961</real>
+          <real name="x">811.875</real>
+        </attributes>
+        <aspects></aspects>
+      </id709369>
       <id541216 prototype="id892234">
         <attributes name="point" id="position">
           <real name="y">244</real>
@@ -621,6 +665,17 @@
         </attributes>
         <aspects></aspects>
       </id541216>
+      <id371265 prototype="id974044">
+        <attributes name="point" id="position">
+          <real name="y">186.727</real>
+          <real name="x">885.535</real>
+        </attributes>
+        <attributes name="size" id="size">
+          <real name="width">37.2812</real>
+          <real name="height">35</real>
+        </attributes>
+        <aspects></aspects>
+      </id371265>
       <id660028 prototype="id214699">
         <attributes name="point" id="position">
           <real name="y">189.5</real>

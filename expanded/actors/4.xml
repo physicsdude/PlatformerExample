@@ -1,48 +1,110 @@
 <opt PGFVersion="0.19" id="id892234" GSCVersion="0.10.3">
-  <behaviors name="behavior" id="id735818" class="ParticlesBehavior" enabled="true">
-    <attributes name="enumeration" id="blendingMode">3</attributes>
-    <attributes name="angle">
-      <direction name="expression" string="random(70,110)" />
-      <rotation>0</rotation>
-    </attributes>
-    <attributes name="image" id="image">boom02</attributes>
-    <attributes name="boolean">
-      <sizeChange>true</sizeChange>
-      <affectedByGravity>false</affectedByGravity>
-      <colorChange>true</colorChange>
-    </attributes>
-    <attributes name="index">
-      <directionRelativity>0</directionRelativity>
-      <numParticles>30</numParticles>
-    </attributes>
-    <attributes name="color">
-      <color name="real">
-        <green>0.645294</green>
-        <blue>0.0493026</blue>
-        <alpha>0.73</alpha>
-        <red>1</red>
-      </color>
-      <colorTarget name="real">
-        <green>0.516304</green>
-        <blue>0.516304</blue>
-        <alpha>0.63</alpha>
-        <red>0.516304</red>
-      </colorTarget>
-    </attributes>
-    <attributes name="name">Particles</attributes>
-    <attributes name="bundleName">Particles.behavior</attributes>
-    <attributes name="real">
-      <angularVelocity>0</angularVelocity>
-      <emitterOffsetX name="expression" string="random(-3,3)" />
-      <lifetime>1.5</lifetime>
-      <size>7</size>
-      <sizeTransitionTime>1</sizeTransitionTime>
-      <colorTransitionTime>1</colorTransitionTime>
-      <startupTime>2</startupTime>
-      <speed>15</speed>
-      <sizeTarget>3</sizeTarget>
-      <emitterOffsetY>16</emitterOffsetY>
-    </attributes>
+  <behaviors name="behavior">
+    <id735818 class="ParticlesBehavior" enabled="true">
+      <attributes name="enumeration" id="blendingMode">3</attributes>
+      <attributes name="angle">
+        <direction name="expression" string="random(70,110)" />
+        <rotation>0</rotation>
+      </attributes>
+      <attributes name="image" id="image">boom02</attributes>
+      <attributes name="boolean">
+        <sizeChange>true</sizeChange>
+        <affectedByGravity>false</affectedByGravity>
+        <colorChange>true</colorChange>
+      </attributes>
+      <attributes name="index">
+        <directionRelativity>0</directionRelativity>
+        <numParticles>30</numParticles>
+      </attributes>
+      <attributes name="color">
+        <color name="real">
+          <green>0.645294</green>
+          <blue>0.0493026</blue>
+          <alpha>0.73</alpha>
+          <red>1</red>
+        </color>
+        <colorTarget name="real">
+          <green>0.516304</green>
+          <blue>0.516304</blue>
+          <alpha>0.63</alpha>
+          <red>0.516304</red>
+        </colorTarget>
+      </attributes>
+      <attributes name="name">Particles</attributes>
+      <attributes name="bundleName">Particles.behavior</attributes>
+      <attributes name="real">
+        <angularVelocity>0</angularVelocity>
+        <emitterOffsetX name="expression" string="random(-3,3)" />
+        <lifetime>1.5</lifetime>
+        <size>7</size>
+        <sizeTransitionTime>1</sizeTransitionTime>
+        <colorTransitionTime>1</colorTransitionTime>
+        <startupTime>2</startupTime>
+        <speed>15</speed>
+        <sizeTarget>3</sizeTarget>
+        <emitterOffsetY>16</emitterOffsetY>
+      </attributes>
+    </id735818>
+    <id558917 class="RuleBehavior" enabled="true">
+      <elseBehaviors></elseBehaviors>
+      <behaviors name="behavior" id="id874958" class="ParticlesBehavior" enabled="true">
+        <attributes name="enumeration" id="blendingMode">3</attributes>
+        <attributes name="angle">
+          <direction>0</direction>
+          <rotation>0</rotation>
+        </attributes>
+        <attributes name="image" id="image" />
+        <attributes name="boolean">
+          <sizeChange>true</sizeChange>
+          <affectedByGravity>true</affectedByGravity>
+          <colorChange>true</colorChange>
+        </attributes>
+        <attributes name="index">
+          <directionRelativity>0</directionRelativity>
+          <numParticles>10</numParticles>
+        </attributes>
+        <attributes name="color">
+          <color name="real">
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>1</alpha>
+            <red>1</red>
+          </color>
+          <colorTarget name="real">
+            <green>0.5</green>
+            <blue>0</blue>
+            <alpha>1</alpha>
+            <red>1</red>
+          </colorTarget>
+        </attributes>
+        <attributes name="name">Particles</attributes>
+        <attributes name="bundleName">Particles.behavior</attributes>
+        <attributes name="real">
+          <angularVelocity>10</angularVelocity>
+          <emitterOffsetX name="expression" string="random(5,-5)" />
+          <lifetime>3</lifetime>
+          <size>98.5269</size>
+          <sizeTransitionTime>1</sizeTransitionTime>
+          <colorTransitionTime>1</colorTransitionTime>
+          <startupTime>0.1</startupTime>
+          <speed>5</speed>
+          <sizeTarget>10</sizeTarget>
+          <emitterOffsetY>0</emitterOffsetY>
+        </attributes>
+      </behaviors>
+      <attributes name="name">Rule</attributes>
+      <attributes name="bundleName">Rule.behavior</attributes>
+      <attributes name="real" id="compoundConditionKind">0</attributes>
+      <conditions pluginPredicateTypeIndex="0" eventType="key" name="condition" id="id115083">
+        <predicate type="key">
+          <attributes name="text">
+            <mode>down</mode>
+            <keyString>f</keyString>
+          </attributes>
+        </predicate>
+        <attributes name="index" id="conditionType">0</attributes>
+      </conditions>
+    </id558917>
   </behaviors>
   <aspects name="graphics">
     <attributes name="boolean">
