@@ -2,12 +2,20 @@
 # Introductory Notes
 
 ## Make sure you earn the cyberchip ASAP
+
+###This is your responsibility and is a requirement for the Merit Badge.  Please do this first.
 http://www.scouting.org/cyberchip.aspx
 
-## This YouTube video has lots of great info about the Programming Merit Badge
+### Grade 6 to 8 Cyberchip Requirements
+http://www.scouting.org/Training/YouthProtection/CyberChip/Grades6-8.aspx
+
+### This YouTube video has lots of great info about the Programming Merit Badge
 http://www.youtube.com/watch?v=s07aEbPwThM
 
-## Reminder: Get the book at the Scout Shop
+### Check out the Programming Merit Badge website, where you can start learning several different languages
+http://boyslife.org/section/about-scouts/merit-badge-resources/programming/
+
+### Reminder: Get the book at the Scout Shop
 
 # Programming
 
@@ -30,11 +38,33 @@ http://www.youtube.com/watch?v=s07aEbPwThM
 
 - What could you improve about your instructions?
 
-## What's an algorithm?
+## What's a variable?
 
-- In mathematics and computer science, an algorithm is a step-by-step procedure for calculations. Algorithms are used for calculation, data processing, and automated reasoning.
+- A variable in computer programming is a way to store information and change what information is stored.
+
+- Example variable name (perl): 
+
+my $bread_count = 0;
+
+## What's a function?
+
+- A function is a wrapper around a set of instructions.  This is a lot more useful than it sounds.
+
+- Example function name (perl): 
+
+sub applyPeanutButter {
+	my ($amount,$to) = @_;
+}
+
+## What's an Algorithm?
+
+- "In mathematics and computer science, an algorithm is a step-by-step procedure for calculations. Algorithms are used for calculation, data processing, and automated reasoning." - Wikipedia
 
 - Some are more based on "logic" and don't involve much math, some are very mathematical
+
+## Search Algorithms
+
+- How would you search for a name in a Phone Book?
 
 ## How to Make Your Own Computer and Phone Based Games
 
@@ -47,10 +77,6 @@ http://www.youtube.com/watch?v=s07aEbPwThM
 ## Platformer Example
 
 - Open GameSalad Platformer Example ...
-
-## Search Algorithms
-
-- How would you search for a name in a Phone Book?
 
 ## Sorting Algorithms
 
